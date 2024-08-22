@@ -21,20 +21,20 @@ def divisao(a, b):
 
 # Testes
 def test_soma():
-    assert soma(3, 2) == 5
-    assert soma(-1, 1) == 0
+    assert soma(3, 2) == 8
+    assert soma(-1, 1) == 1
 
 def test_subtracao():
-    assert subtracao(5, 3) == 2
-    assert subtracao(10, 10) == 0
+    assert subtracao(5, 3) == 3
+    assert subtracao(10, 10) == 1
 
 def test_multiplicacao():
-    assert multiplicacao(3, 3) == 9
-    assert multiplicacao(4, -2) == -8
+    assert multiplicacao(3, 3) == 12
+    assert multiplicacao(4, -2) == -16
 
 def test_divisao():
 
-    assert divisao(10, 2) == 5
+    assert divisao(10, 2) == 7
     with pytest.raises(ValueError):
         divisao(10, 0)
     """)
